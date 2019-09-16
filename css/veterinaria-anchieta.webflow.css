@@ -147,7 +147,7 @@ figcaption {
   width: 100%;
   height: 100vh;
   margin-top: -150px;
-  padding: 210px 30px 120px;
+  padding: 210px 30px 120px 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -163,6 +163,14 @@ figcaption {
 }
 
 .header.homepage {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url('../images/banner-homepage.jpg');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/banner-homepage.jpg');
   background-position: 0px 0px, 0px 0px;
@@ -232,10 +240,21 @@ figcaption {
 }
 
 .header-content {
-  max-width: 770px;
+  display: block;
+  width: 100%;
+  max-width: 1170px;
+  margin-left: -255px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
   -webkit-perspective: 2000px;
   perspective: 2000px;
-  text-align: center;
+  text-align: left;
 }
 
 .h1 {
@@ -253,6 +272,10 @@ figcaption {
   margin-top: 15px;
   margin-bottom: 60px;
   color: #000;
+  text-align: center;
+}
+
+.h1.home-h1 {
   text-align: center;
 }
 
@@ -330,14 +353,6 @@ figcaption {
   z-index: 1;
   width: 100%;
   max-width: 1170px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  -ms-grid-row-align: stretch;
-  align-self: stretch;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
 }
 
 .container.cc-center {
@@ -345,7 +360,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
   margin-right: 0px;
   margin-left: 0px;
   padding-left: 0px;
@@ -477,7 +492,7 @@ figcaption {
   width: 100%;
   height: 100%;
   margin-bottom: 0px;
-  margin-left: 246px;
+  margin-left: 0px;
   padding-right: 0px;
   padding-left: 20px;
   -webkit-box-orient: vertical;
@@ -985,6 +1000,10 @@ figcaption {
   color: #000;
 }
 
+.link-footer.temp {
+  display: none;
+}
+
 .link-social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1102,10 +1121,10 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 40vh;
-  margin-top: 0px;
-  margin-bottom: -150px;
-  padding: 60px 30px 0px;
+  height: 60vh;
+  margin-top: -150px;
+  margin-bottom: -118px;
+  padding: 180px 30px 90px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1127,7 +1146,7 @@ figcaption {
 }
 
 .header-inner-content {
-  width: 57%;
+  width: 50%;
 }
 
 .inner-category {
@@ -1825,7 +1844,6 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   margin-top: 117px;
   padding: 120px 30px;
   -webkit-box-orient: horizontal;
@@ -2235,7 +2253,7 @@ figcaption {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url('../images/banner-homepage.jpg');
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banner-homepage.jpg');
     background-position: 0px 0px, 50% 50%;
-    background-size: auto, contain;
+    background-size: auto, cover;
   }
   .navigation-logo.w--current {
     width: 30%;
@@ -2793,7 +2811,7 @@ figcaption {
     margin-bottom: -60px;
   }
   .header-inner {
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 60px;
   }
   .header-inner.cc-header-extra {
@@ -2907,7 +2925,7 @@ figcaption {
     padding-bottom: 20px;
   }
   .navigation-container {
-    height: 100px;
+    height: 60px;
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
@@ -2925,9 +2943,6 @@ figcaption {
   }
   .navigation-logo {
     margin-top: 35px;
-    margin-right: 65px;
-    margin-left: 0px;
-    padding-right: 0px;
   }
   .navigation-logo.w--current {
     width: 30%;
@@ -3099,6 +3114,9 @@ figcaption {
   .link-footer.w--current:visited {
     color: rgba(239, 122, 34, 0.61);
   }
+  .link-footer.temp {
+    display: none;
+  }
   .footer-social {
     width: 50%;
     margin-top: 0px;
@@ -3109,8 +3127,7 @@ figcaption {
     justify-content: space-around;
   }
   .header-inner {
-    height: 45vh;
-    margin-top: -170px;
+    margin-top: -120px;
     padding-top: 120px;
     padding-bottom: 60px;
   }
@@ -3251,6 +3268,3 @@ figcaption {
   }
 }
 
-.esconder{
-  display: none;
-}
