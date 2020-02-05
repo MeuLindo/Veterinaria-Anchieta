@@ -1,3 +1,15 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -140,6 +152,7 @@ figcaption {
 }
 
 .header {
+  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -147,7 +160,7 @@ figcaption {
   width: 100%;
   height: 100vh;
   margin-top: -150px;
-  padding: 210px 30px 120px 0px;
+  padding: 210px 0px 120px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -156,13 +169,14 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/the-medicine-pet-care-and-people-concept-dog-and-CSVYA73.JPG');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/the-medicine-pet-care-and-people-concept-dog-and-CSVYA73.JPG');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/veterinary-visit-in-clinic-with-vet-and-sick-dog-PVSMJZK.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/veterinary-visit-in-clinic-with-vet-and-sick-dog-PVSMJZK.jpg');
   background-position: 0px 0px, 50% 0%;
   background-size: auto, cover;
 }
 
 .header.homepage {
+  padding-right: 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -171,9 +185,22 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url('../images/banner-homepage.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/banner-homepage.jpg');
-  background-position: 0px 0px, 0px 0px;
+  background-image: radial-gradient(circle farthest-corner at 0% 0%, #000, transparent 46%), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url('../images/banner-homepage.jpg');
+  background-image: radial-gradient(circle farthest-corner at 0% 0%, #000, transparent 46%), linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/banner-homepage.jpg');
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  background-size: auto, auto, cover;
+}
+
+.header.nossa-historia {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/the-medicine-pet-care-and-people-concept-dog-and-CSVYA73.JPG');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/the-medicine-pet-care-and-people-concept-dog-and-CSVYA73.JPG');
+  background-position: 0px 0px, 50% 0%;
+}
+
+.header.estetica-animal {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bathing-a-cute-dog-NDMH4K5.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bathing-a-cute-dog-NDMH4K5.jpg');
+  background-position: 0px 0px, 50% 0%;
   background-size: auto, cover;
 }
 
@@ -243,7 +270,7 @@ figcaption {
   display: block;
   width: 100%;
   max-width: 1170px;
-  margin-left: -255px;
+  margin-left: 0px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -255,6 +282,10 @@ figcaption {
   -webkit-perspective: 2000px;
   perspective: 2000px;
   text-align: left;
+}
+
+.header-content.banner-home {
+  margin-left: 0px;
 }
 
 .h1 {
@@ -276,6 +307,8 @@ figcaption {
 }
 
 .h1.home-h1 {
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -284,7 +317,7 @@ figcaption {
   padding-top: 25px;
   padding-bottom: 25px;
   font-family: 'Libre Franklin', sans-serif;
-  color: #999;
+  color: #000;
   font-size: 20px;
   line-height: 24px;
   font-weight: 300;
@@ -295,8 +328,9 @@ figcaption {
 
 .paragraph.cc-gray {
   padding-bottom: 0px;
-  color: #999;
+  color: #000;
   font-weight: 300;
+  text-align: justify;
 }
 
 .paragraph.justify {
@@ -315,6 +349,14 @@ figcaption {
 
 .paragraph.left {
   text-align: justify;
+}
+
+.paragraph.branco {
+  color: #fff;
+}
+
+.paragraph.center {
+  text-align: center;
 }
 
 .button {
@@ -558,7 +600,7 @@ figcaption {
   margin-top: 0px;
   margin-bottom: 10px;
   font-family: 'Libre Franklin', sans-serif;
-  color: #000;
+  color: #ef7a22;
   font-size: 16px;
   font-weight: 600;
 }
@@ -566,6 +608,7 @@ figcaption {
 .h3.cc-cta {
   margin-bottom: 0px;
   color: #ef7a22;
+  font-weight: 200;
 }
 
 .h3.cc-header {
@@ -598,9 +641,9 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 328px 30px 0px;
+  max-width: 1170px;
+  margin: 0px auto;
+  padding: 328px 0px 0px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -620,7 +663,7 @@ figcaption {
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
-  background-color: #fafafa;
+  background-color: transparent;
 }
 
 .slider {
@@ -683,14 +726,21 @@ figcaption {
   display: flex;
   width: 100%;
   padding: 115px 0px;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: #fafafa;
+  text-align: left;
 }
 
 .link {
@@ -775,8 +825,8 @@ figcaption {
 }
 
 ._2-row-text {
-  max-width: 370px;
-  margin-right: 100px;
+  max-width: 575px;
+  margin-right: 0px;
 }
 
 ._2-row-text.cc-bottom {
@@ -793,6 +843,10 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1002,6 +1056,10 @@ figcaption {
 
 .link-footer.temp {
   display: none;
+}
+
+.link-footer.temp.w--current {
+  display: block;
 }
 
 .link-social {
@@ -1454,8 +1512,8 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0px;
-  padding-top: 35px;
+  margin-top: -74px;
+  padding-top: 0px;
   padding-right: 30px;
   padding-left: 30px;
   -webkit-box-pack: center;
@@ -1471,12 +1529,15 @@ figcaption {
 .fact-block {
   padding: 50px 40px;
   border: 1px solid #f7f7f7;
-  background-color: #fff;
+  border-radius: 20px;
+  background-color: rgba(230, 230, 230, 0.8);
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .image-2 {
   margin-bottom: 20px;
+  -webkit-filter: contrast(200%) hue-rotate(270deg);
+  filter: contrast(200%) hue-rotate(270deg);
 }
 
 .facts-gray-background {
@@ -1494,7 +1555,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 120px 30px;
+  padding: 60px 30px 120px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1840,36 +1901,62 @@ figcaption {
 }
 
 .contact-intro {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  width: 100%;
+  max-width: 1170px;
   margin-top: 117px;
-  padding: 120px 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 120px 30px 120px 0px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
 }
 
 .contact-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .contact-info-row {
@@ -1877,8 +1964,8 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .contact-info-text {
@@ -2036,6 +2123,11 @@ figcaption {
   display: none;
 }
 
+.nav-link.temp.w--current {
+  display: block;
+  color: #ef7a22;
+}
+
 .latest-posts {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2187,21 +2279,19 @@ figcaption {
 }
 
 .container-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding-right: 0px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .columns {
@@ -2233,6 +2323,54 @@ figcaption {
   -ms-flex-pack: start;
   justify-content: flex-start;
   text-align: left;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1170px;
+  justify-items: stretch;
+  grid-column-gap: 50px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.acesso {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cta-line-2 {
+  width: 30px;
+  height: 2px;
+  margin-left: 20px;
+  background-color: #ef7a22;
+}
+
+.cta-line-2.cc-header {
+  background-color: #fff;
+}
+
+.image-6 {
+  max-width: 1170px;
+}
+
+.list {
+  padding-left: 0px;
 }
 
 @media (max-width: 991px) {
@@ -2584,6 +2722,9 @@ figcaption {
     background-size: auto, cover;
     background-attachment: scroll, scroll;
   }
+  .header.estetica-animal {
+    margin-bottom: 35px;
+  }
   .navigation-logo.w--current {
     width: 20%;
   }
@@ -2922,7 +3063,7 @@ figcaption {
     min-height: 0px;
     margin-bottom: 0px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
   .navigation-container {
     height: 60px;
@@ -2940,6 +3081,11 @@ figcaption {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/banner-homepage.jpg');
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/banner-homepage.jpg');
     background-position: 0px 0px, 25% 50%;
+  }
+  .header.estetica-animal {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bathing-a-cute-dog-NDMH4K5.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bathing-a-cute-dog-NDMH4K5.jpg');
+    background-position: 0px 0px, 50% 0%;
   }
   .navigation-logo {
     margin-top: 35px;
@@ -3001,16 +3147,18 @@ figcaption {
     line-height: 30px;
   }
   .slider-section {
+    height: 30vh;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 48px;
     padding-bottom: 0px;
   }
   .slider {
-    height: 150px;
+    height: 30vh;
     margin-top: -75px;
   }
   .slide {
+    height: auto;
     background-position: 50% 0%;
     background-size: cover;
   }
@@ -3265,6 +3413,36 @@ figcaption {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+}
+
+#w-node-2d918f18901c-2799f6db {
+  -ms-grid-column-align: auto;
+  justify-self: auto;
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-7e5984099c48-2799f6db {
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+  }
+  #w-node-2d918f18901c-2799f6db {
+    -ms-grid-column-align: auto;
+    justify-self: auto;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
   }
 }
 
