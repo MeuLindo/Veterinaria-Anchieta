@@ -187,8 +187,8 @@ figcaption {
   align-items: center;
   background-image: radial-gradient(circle farthest-corner at 0% 0%, #000, transparent 46%), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url('../images/banner-homepage.jpg');
   background-image: radial-gradient(circle farthest-corner at 0% 0%, #000, transparent 46%), linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/banner-homepage.jpg');
-  background-position: 0px 0px, 0px 0px, 0px 0px;
-  background-size: auto, auto, cover;
+  background-position: 0px 0px, 0px 0px, 0px -125px;
+  background-size: 100%;
 }
 
 .header.nossa-historia {
@@ -3076,7 +3076,7 @@ figcaption {
     margin-top: 18px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/banner-homepage.jpg');
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/banner-homepage.jpg');
-    background-position: 0px 0px, 25% 50%;
+    background-position: 0px 0px, 70% 50%;
   }
   .header.estetica-animal {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bathing-a-cute-dog-NDMH4K5.jpg');
