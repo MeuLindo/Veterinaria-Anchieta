@@ -1027,7 +1027,7 @@ figcaption {
 }
 
 .link-footer {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
   font-family: 'Libre Franklin', sans-serif;
@@ -3445,4 +3445,3 @@ figcaption {
     grid-column-end: span 2;
   }
 }
-
