@@ -318,7 +318,7 @@ figcaption {
   padding-bottom: 25px;
   font-family: 'Libre Franklin', sans-serif;
   color: #000;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 24px;
   font-weight: 300;
   text-align: justify;
@@ -1004,13 +1004,18 @@ figcaption {
 }
 
 .text-footer-credits {
-  margin-top: 15px;
+  margin-top: 5px;
   font-family: 'Libre Franklin', sans-serif;
-  color: #666;
-  font-size: 12px;
+  color: black;
+  font-size: 11px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: bold;
   text-align: right;
+}
+.text-footer-credits a{
+  text-decoration: none;
+  color: black;
+
 }
 
 .footer-links-list {
@@ -1027,12 +1032,12 @@ figcaption {
 }
 
 .link-footer {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
   font-family: 'Libre Franklin', sans-serif;
   color: #000;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 18px;
   font-weight: 600;
   text-decoration: none;
@@ -3445,4 +3450,3 @@ figcaption {
     grid-column-end: span 2;
   }
 }
-
