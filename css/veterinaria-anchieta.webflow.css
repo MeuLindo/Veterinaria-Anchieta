@@ -1067,23 +1067,7 @@ figcaption {
   display: block;
 }
 
-.link-social {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20%;
-  height: auto;
-  margin-right: 15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+
 
 .footer-social {
   display: -webkit-box;
@@ -2221,7 +2205,8 @@ figcaption {
 }
 
 .image-4 {
-  width: 110%;
+  margin-left: 10px;
+  width: 35%;
   -webkit-filter: brightness(0%);
   filter: brightness(0%);
 }
@@ -2232,7 +2217,8 @@ figcaption {
 }
 
 .image-5 {
-  width: 60%;
+
+  width: 20%;
   -webkit-filter: brightness(0%);
   filter: brightness(0%);
 }
@@ -2240,6 +2226,16 @@ figcaption {
 .image-5:hover {
   -webkit-filter: hue-rotate(180deg);
   filter: hue-rotate(180deg);
+}
+
+.links-sociais {
+  margin-left: 40px;
+  width: 100px;|
+
+}
+
+.links-sociais a {
+  text-decoration: none;
 }
 
 .section {
@@ -2516,10 +2512,7 @@ figcaption {
   .link-footer:hover {
     color: #999;
   }
-  .link-social {
-    width: 60%;
-    height: auto;
-  }
+
   .collection-item {
     width: 33.33333333%;
     padding-right: 5px;
@@ -2920,10 +2913,7 @@ figcaption {
   .link-footer.w--current {
     color: #000;
   }
-  .link-social {
-    width: 25%;
-    height: auto;
-  }
+
   .footer-social {
     width: 20%;
     height: 100%;
