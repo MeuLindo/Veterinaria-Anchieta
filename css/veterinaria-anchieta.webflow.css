@@ -319,7 +319,7 @@ figcaption {
   padding-bottom: 25px;
   font-family: 'Libre Franklin', sans-serif;
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 300;
   text-align: justify;
@@ -1496,13 +1496,14 @@ figcaption {
   justify-content: center;
 }
 
+
 .facts {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -74px;
+  margin-top: 20px;
   padding-top: 0px;
   padding-right: 30px;
   padding-left: 30px;
