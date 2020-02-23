@@ -1996,8 +1996,12 @@ figcaption {
 .bloco{
   width: 56%;
   margin-bottom: 10px;
-
 }
+
+.h2.a-clinica-h2{
+  color:black;
+}
+
 .form-input {
   width: 50%;
   margin-top: -10px;
