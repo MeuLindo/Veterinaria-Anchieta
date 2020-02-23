@@ -348,6 +348,15 @@ figcaption {
   color: #fff;
 }
 
+.secador-de-cabelo{
+  width: 60%;
+}
+
+.cao-e-gato{
+  width: 60%;
+
+}
+
 .paragraph.left {
   text-align: justify;
 }
@@ -1986,7 +1995,15 @@ figcaption {
 
 .vacina{
   width: 50%;
-  margin-bottom: -5px;
+  margin-bottom: 0px;
+}
+
+.cuidados-especiais{
+  width: 60%;
+}
+
+.carro{
+  width: 75%;
 }
 
 .lab{
