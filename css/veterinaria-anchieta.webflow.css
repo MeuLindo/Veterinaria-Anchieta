@@ -1972,6 +1972,32 @@ figcaption {
   color: #000;
 }
 
+.paragraph.cc-gray{
+  color:#222;
+  text-align: left;
+  font-size: 20px;
+}
+
+.medico{
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.vacina{
+  width: 50%;
+  margin-bottom: -5px;
+}
+
+.lab{
+  margin-bottom: 10px;
+  width: 55%;
+}
+
+.bloco{
+  width: 56%;
+  margin-bottom: 10px;
+
+}
 .form-input {
   width: 50%;
   margin-top: -10px;
