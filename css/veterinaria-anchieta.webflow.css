@@ -2016,6 +2016,10 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.bg-cinza{
+  background-color: #fafafa;
+}
+
 .h2.a-clinica-h2{
   color:black;
 }
